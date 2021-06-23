@@ -25,11 +25,6 @@ set ::env(VERILOG_FILES) "\
         $script_dir/../../verilog/rtl/i2c/i2c_master_bit_ctrl.v \
         $script_dir/../../verilog/rtl/i2c/i2c_master_byte_ctrl.v \
         $script_dir/../../verilog/rtl/i2c/i2c_master_top.v \
-        $script_dir/../../verilog/rtl/rtc/hexmap.v \
-        $script_dir/../../verilog/rtl/rtc/rtcdate.v \ 
-        $script_dir/../../verilog/rtl/rtc/rtcgps.v \
-        $script_dir/../../verilog/rtl/rtc/rtclight.v \
-        $script_dir/../../verilog/rtl/rtc/rtcclock.v \
         $script_dir/../../verilog/rtl/fpu/except.v \
         $script_dir/../../verilog/rtl/fpu/post_norm.v \
         $script_dir/../../verilog/rtl/fpu/pre_norm_fmul.v \
@@ -40,7 +35,7 @@ set ::env(VERILOG_FILES) "\
 	
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "wb_clk_i"
-set ::env(CLOCK_PERIOD) "100"
+set ::env(CLOCK_PERIOD) "10"
 
 set ::env(DESIGN_IS_CORE) 0
 set ::env(FP_PDN_CORE_RING) 0
@@ -51,7 +46,7 @@ set ::env(VDD_NETS) [list {vccd1} {vccd2} {vdda1} {vdda2}]
 set ::env(GND_NETS) [list {vssd1} {vssd2} {vssa1} {vssa2}]
 
 set ::env(SYNTH_MAX_FANOUT) 6
-set ::env(FP_CORE_UTIL) 24
+set ::env(FP_CORE_UTIL) 20
 set ::env(PL_TARGET_DENSITY) [ expr ($::env(FP_CORE_UTIL)+4) / 100.0 ]
 set ::env(CELL_PAD) 4
 
