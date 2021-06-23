@@ -33,7 +33,7 @@ set ::env(VERILOG_FILES) "\
 set ::env(CLOCK_PORT) "wb_clk_i"
 set ::env(CLOCK_NET) "wb_clk_i"
 
-set ::env(CLOCK_PERIOD) "100"
+set ::env(CLOCK_PERIOD) "10"
 
 ## Internal Macros
 ### Macro Placement
